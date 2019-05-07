@@ -1,0 +1,43 @@
+{{Infobox writer
+| name             =
+| embed            =
+| honorific_prefix =
+| honorific_suffix =
+| image            =
+| image_size       =
+| image_upright    =
+| alt              =
+| caption          =
+| native_name      =
+| native_name_lang =
+| pseudonym        =
+| birth_name       =
+| birth_date       = <!-- {{Birth date and age|YYYY|MM|DD}} -->
+| birth_place      =
+| death_date       = <!-- {{Death date and age|YYYY|MM|DD|YYYY|MM|DD}} -->
+| death_place      =
+| resting_place    =
+| occupation       =
+| language         =
+| residence        =
+| nationality      =
+| citizenship      =
+| education        =
+| alma_mater       =
+| period           =
+| genre            = <!-- or: | genres = -->
+| subject          = <!-- or: | subjects = -->
+| movement         =
+| notableworks     = <!-- or: | notablework = -->
+| spouse           = <!-- or: | spouses = -->
+| partner          = <!-- or: | partners = -->
+| children         =
+| relatives        =
+| awards           =
+| signature        =
+| signature_alt    =
+| years_active     =
+| module           =
+| website          = <!-- {{URL|example.org}} -->
+| portaldisp       = <!-- "on", "yes", "true", etc; or omit -->
+}}
