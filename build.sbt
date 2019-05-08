@@ -1,7 +1,7 @@
 scalaVersion := "2.11.11"
 
 name := "wikipedia-page-processor"
-organization := "org.alexeyn"
+organization := "org.barsun"
 version := "1.0"
 
 val sparkVersion = "2.2.0"

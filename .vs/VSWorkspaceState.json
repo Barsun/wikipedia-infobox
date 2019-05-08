@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\project",
+    "\\src",
+    "\\src\\main",
+    "\\src\\main\\resources",
+    "\\src\\main\\scala",
+    "\\src\\main\\scala\\xml",
+    "\\src\\main\\scala\\xml\\analytics",
+    "\\src\\main\\scala\\xml\\dump"
+  ],
+  "SelectedNode": "\\src\\main\\scala\\xml\\dump\\Model.scala",
+  "PreviewInSolutionExplorer": false
+}

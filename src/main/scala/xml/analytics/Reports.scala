@@ -13,9 +13,9 @@ object Reports extends App {
     "ignoreLeadingWhiteSpace" -> "true",
     "ignoreTrailingWhiteSpace" -> "true",
     "inferSchema" -> "true" //,
-    //    "mode" -> "FAILFAST"
-    //    "mode" -> "DROPMALFORMED"
-  )).csv("/Users/alexey/Downloads/wikipedia/output/person.csv")
+        "mode" -> "FAILFAST"
+        "mode" -> "DROPMALFORMED"
+  )).csv("/Users/Barsun/Downloads/wikipedia/output/person.csv")
 
   val nationality = personDf.col("nationality")
   val nationalityProjection = when(
@@ -33,8 +33,13 @@ object Reports extends App {
     "ignoreLeadingWhiteSpace" -> "true",
     "ignoreTrailingWhiteSpace" -> "true",
     "inferSchema" -> "true"))
-    .csv("/Users/alexey/Downloads/wikipedia/settlement.csv")
+    .csv("/Users/Barsun/Downloads/wikipedia/settlement.csv")
 
+  val subdivisionNameCountry = col("subdivision_name")
+  val subdivisionNameGender = when(subdivisionName.isin("USA", "United States"), "USA")
+    .when(subdivisionName.contains("POL").or(subdivisionName.equalTo("Poland")), "Poland")
+    .otherwise(subdivisionName)
+    .as("subdivision_name_normalized")
 
   val subdivisionName = col("subdivision_name")
   val subdivisionNameProjection = when(subdivisionName.isin("USA", "United States"), "USA")
